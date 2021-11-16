@@ -1,0 +1,13 @@
+build
+node_modules
+
+.env
+.env.main
+
+.DSStore
+.env
+.idea
+
+private_key
+
+package-lock.json

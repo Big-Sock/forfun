@@ -1,0 +1,98 @@
+body {
+  background: rgb(14, 23, 19);
+  margin: 0;
+  font-family: "Sophia Nubian Regular", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: whitescale;
+  overflow: hidden;
+
+}
+
+a {
+  color: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Series > g > path {
+  stroke: white !important;
+}
+
+.medium-link {
+  max-width: 60%;
+  margin-bottom: 5px;
+}
+
+.milestone-image {
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.swal2-container {
+  z-index: 10000000 !important;
+}
+
+.timeline-Widget {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination > li {
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+  height: 26px;
+  margin: 0 10px;
+  display: flex;
+  transition: all 0.1s linear;
+  padding: 2px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .pagination > li {
+    margin: 0 5px;
+  }
+}
+
+.pagination > li:hover {
+  background-color: rgba(60, 91, 216, 0.9);
+}
+
+.pagination > li > a {
+  outline: none;
+  height: 100%;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination > li:first-child {
+  border-radius: 5px;
+}
+
+.pagination > li:last-child {
+  border-radius: 5px;
+}
+
+.pagination > li.active {
+  background-color: #3c5bd8;
+}
