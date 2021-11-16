@@ -33,6 +33,8 @@ const BaseView = (props) => {
 const TopBarContainer = styled.div`
 margin-right: 10px;
 margin-top: 10px;
+position: absolute;
+width: calc(100% - 20px);
 `
 
 const StyledPage = styled.div`

@@ -19,9 +19,9 @@ const AccountButton = () => {
   };
 
   return (
-    <StyledAccountButton>
+    <StyledAccountButton  onClick={unlock}>
       {!account ? (
-        <Button disabled={false} onClick={unlock}>
+        <Button disabled={false}>
           Connect Wallet
         </Button>
       ) : (
@@ -47,16 +47,16 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: green;
-  font-size: 20px;
+  color: black;
+  font-size: 16px;
   font-family: "Sophia Nubian Bold", sans-serif;
   cursor: pointer;
   
 `;
 
 const StyledAccountButton = styled.div`
-  padding: 8px 12px 8px 12px;
-  border: solid 2px green;
+  padding: 6px 10px 6px 10px;
+  box-shadow: rgba(28, 15, 65, 0.2) 0px 4px 8px 0px, rgba(28, 15, 65, 0.2) 0px 6px 10px 0px;
   border-radius: 10px;
   height: 30px;
   cursor: pointer;
@@ -68,6 +68,7 @@ const StyledAccountButton = styled.div`
   width: 165px;
   &:hover {
     opacity: 1;
+    box-shadow: rgba(28, 15, 65, 0.3) 0px 4px 8px 0px, rgba(28, 15, 65, 0.3) 0px 6px 10px 0px;
   }
 
 `;
@@ -87,7 +88,7 @@ const StyledAccountInfo = styled.div`
 `;
 
 const StyledA = styled.a`
-  font-size: 20px;
+  font-size: 16px;
   color: gray;
   line-height: 1;
   text-decoration: none !important;
