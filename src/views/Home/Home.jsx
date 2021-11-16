@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { BaseView } from "../BaseView";
 import NFT1 from '../../assets/img/nft1.gif'
 import NFT2 from '../../assets/img/nft2.jpg'
 import NFT3 from '../../assets/img/nft3.jpg'
@@ -38,11 +37,9 @@ const NFTs = [
 
 const Home = () => {
   return (
-    <BaseView>
-      <LandingSection>
-        {NFTs.map(nft => <Tile {...nft} />)}
-      </LandingSection>
-    </BaseView>
+    <LandingSection>
+      {NFTs.map(nft => <Tile {...nft} />)}
+    </LandingSection>
   );
 };
 

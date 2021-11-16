@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Swal from "sweetalert2";
 import { useWallet } from "use-wallet";
-import isMobile from "../../../utils/isMobile";
+import isMobile from "../../../../utils/isMobile";
 
 const AccountButton = () => {
   const { account, connect } = useWallet();
@@ -47,7 +47,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: green;
   font-size: 20px;
   font-family: "Sophia Nubian Bold", sans-serif;
   cursor: pointer;
@@ -56,8 +56,8 @@ const Button = styled.button`
 
 const StyledAccountButton = styled.div`
   padding: 8px 12px 8px 12px;
+  border: solid 2px green;
   border-radius: 10px;
-  background-color: #3c5bd8;
   height: 30px;
   cursor: pointer;
   transition: all 0.1s linear;
@@ -76,7 +76,6 @@ const Oval = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 5px;
-  background-color: #7dca46;
   margin-right: 10px;
 `;
 
@@ -89,7 +88,7 @@ const StyledAccountInfo = styled.div`
 
 const StyledA = styled.a`
   font-size: 20px;
-  color: white;
+  color: gray;
   line-height: 1;
   text-decoration: none !important;
   transition: all 0.1s linear;

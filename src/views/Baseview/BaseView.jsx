@@ -1,25 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import { Footer } from "../components/Footer/Footer";
-import { PageDivider } from "../components/PageDivider";
-import TopBar from "../components/TopBar";
-import AccountButton from "../components/TopBar/components/AccountButton";
-import { Nav } from "../components/TopBar/components/Nav";
-import Forest from '../assets/img/forest.png'
+import { Footer } from "./Footer/Footer";
+import { PageDivider } from "../../components/PageDivider";
+import TopBar from "./TopBar";
+import AccountButton from "./TopBar/components/AccountButton";
+import { Nav } from "./TopBar/components/Nav";
+import Forest from '../../assets/img/forest.png'
 
-export const BaseView = (props) => {
+const BaseView = (props) => {
   return (
     <StyledCanvas>
       <BackgroundOverlay />
 
       <ContentContainer>
         <StyledPage>
-          {/* <TopBar />
-          <MobileNav>
+          <TopBarContainer>
+            <TopBar />
+          </TopBarContainer>
+          {/* <MobileNav>
             <Nav />
             <AccountButton />
           </MobileNav> */}
-          <StyledMain>{props.children}</StyledMain>
+          {props.children}
           {/* <Footer /> */}
         </StyledPage>
       </ContentContainer>
@@ -28,22 +30,12 @@ export const BaseView = (props) => {
 };
 
 
-const MobileNav = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    @media only screen and (min-width: 1338px) {
-    display: none;
-  }
-`;
+const TopBarContainer = styled.div`
+margin-right: 10px;
+margin-top: 10px;
+`
 
 const StyledPage = styled.div`
-  margin: 0;
-`;
-
-const StyledMain = styled.div`
 position: absolute;
 height: 100vh;
 width: 100vw;
@@ -55,6 +47,7 @@ background-size: cover;
 padding: 0px;
 box-shadow: rgb(255 255 255 / 20%) 0px 0px 200px 0.1px inset;
 `;
+
 
 const BackgroundOverlay = styled.div`
   position: fixed;

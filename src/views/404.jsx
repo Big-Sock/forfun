@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { BaseView } from "./BaseView";
 
 export const NotFoundView = () => {
   return (
-    <BaseView>
+    <>
       <SubText>There's nothing here</SubText>
       <h1>404</h1>
       <StyledLinkContainer>
@@ -13,7 +12,7 @@ export const NotFoundView = () => {
           Take me home!
         </StyledLink>
       </StyledLinkContainer>
-    </BaseView>
+    </>
   );
 };
 

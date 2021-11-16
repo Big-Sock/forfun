@@ -11,6 +11,8 @@ import { NotFoundView } from "./views/404";
 import Home from "./views/Home";
 
 import { isProduction } from "./web3/constants";
+import BaseView from './views/Baseview/BaseView'
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -26,14 +28,16 @@ const App = () => {
       <StyledCanvas>
         <Router>
           <ModalsProvider>
-            <Switch>
-              <Route path="/" exact>
-                <Home />
-              </Route>
-              <Route path="*">
-                <NotFoundView />
-              </Route>
-            </Switch>
+            <BaseView>
+              <Switch>
+                <Route path="/" exact>
+                  <Home />
+                </Route>
+                <Route path="*">
+                  <NotFoundView />
+                </Route>
+              </Switch>
+            </BaseView>
           </ModalsProvider>
         </Router>
       </StyledCanvas>
