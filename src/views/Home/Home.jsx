@@ -9,12 +9,12 @@ const NFTs = [
   {
     image: NFT1,
     metadata: "bugs",
-    x: 50,
+    x: 450,
     y: 100,
     z: 1,
     width: 250,
     height: 300,
-    rotation: 80
+    rotation: 0
   },
   {
     image: NFT2,
@@ -24,17 +24,17 @@ const NFTs = [
     z: 3,
     width: 300,
     height: 400,
-    rotation: 60
+    rotation: 6
   },
   {
     image: NFT3,
     metadata: "bugs",
-    x: 20,
+    x: 250,
     y: 160,
     z: 2,
     width: 250,
     height: 300,
-    rotation: 30
+    rotation: 3
   }
 ]
 
